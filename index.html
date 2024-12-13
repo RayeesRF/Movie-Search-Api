@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search API</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="flex justify-center">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/5977/5977590.png"
+          class="logo"
+        />
+      </div>
+      <h2 class="text-neutral-300 text-[29px] font-bold">
+        Search unlimited movies, TV shows & more..
+      </h2>
+      <p class="text-neutral-400 mt-1">
+        Ready to watch? Enter your movie name to check if it's a good choice!
+      </p>
+      <div class="flex mt-4">
+        <input
+          class="px-4 py-3 text-white"
+          type="text"
+          placeholder="Search a movie..."
+          id="movieName"
+        />
+        <button class="btn" onclick="search()">Search Movie</button>
+      </div>
+    </div>
+
+    <div id="container" class="mt-16 w-[700px] mx-auto">
+      <div class="flex text-neutral-50 gap-10">
+        <div>
+          <h1 class="text-neutral-100 text-2xl font-bold" id="title">RRR</h1>
+          <p class="my-1">
+            Genre: <span class="text-neutral-200" id="genre"></span>
+          </p>
+          <p class="text-neutral-400 text-md" id="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            similique vel rem culpa quam corporis error!
+          </p>
+          <p class="my-1">
+            Actors: <span class="text-neutral-200" id="actors"></span>
+          </p>
+          <p class="my-1">
+            Directors: <span class="text-neutral-200" id="directors"></span>
+          </p>
+          <p class="my-1">
+            Awards: <span class="text-neutral-200" id="awards"></span>
+          </p>
+          <p class="my-1">
+            Box-Office Collection:
+            <span class="text-neutral-200" id="collection"></span>
+          </p>
+          <p class="my-1">
+            Languages: <span class="text-neutral-200" id="ln"></span>
+          </p>
+          <p class="my-1">
+            IMDB Ratings: <span class="text-neutral-200" id="ratings"></span>
+          </p>
+        </div>
+        <div class="banner">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_SX300.jpg"
+            id="poster"
+            class="rounded-xl"
+          />
+          <div class="suggestion">Worth Watching</div>
+        </div>
+      </div>
+    </div>
+    <h1
+      class="text-2xl my-36 font-bold text-neutral-100 text-center"
+      id="error"
+    ></h1>
+
+    <script src="code.js"></script>
+  </body>
+</html>
